@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, footer{
+    background-color: #FF84A1; 
+    color:white; 
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h2{
+    font-size: 2rem;
+    padding-bottom: .8rem;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilo dos links clicavel*/
+li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: .2rem .8rem;
+    font-weight: bold;
+}
+
+/*Animacao do mouse sob os links */
+li a:hover{
+    color: #FF84A1;
+    background-color: white;
+    transition: 0.3s;
+}
