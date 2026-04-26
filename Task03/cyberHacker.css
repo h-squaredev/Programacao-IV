@@ -1,0 +1,84 @@
+/* Estilos globais para a pagina */
+html, body{
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para todo o body */
+body{
+    background-color: black;
+    font-family: 'firecode', monospace;
+    color: #39FF14;
+    font-size: 12px;
+    overflow-y: auto;
+}
+
+/* Estilos para o header */
+header{
+    
+    text-align: center;
+    padding: 20px;
+    text-shadow: #39FF14 0px 8px 10px;
+}
+
+/* Estilos do botao para iniciar o game */
+.button_glitch{
+    background-color: transparent;
+    border: 2px solid #39FF14;
+    color: #39FF14;
+    padding: 10px 20px;
+    font-family: 'firecode', monospace;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+/* Efeito do mouse sobre o botao */
+.button_glitch:hover{
+    background-color: #39FF14;
+    color: black;
+    animation: tremer-simples 0.05s infinite; /*ativa a animacao de tremor*/
+}
+
+@keyframes tremer-simples {
+    /* de 0% a 100% o box-shadow alterna entre ciano e vermelho, criando um efeito de tremor com o botao*/
+    0%, 100% {
+        box-shadow: 8px 6px 15px #00ffff, -8px -6px 10px #ff0000; /* cria um clone fantasma ciano e vermelho atras*/
+        transform: translate(2px, -1px); /* move o botao levemente para criar o efeito de tremor */
+        text-align: right;
+    }
+    50% {
+        /* Inverte: vermelho direita, ciano esquerda */
+        box-shadow: -8px -6px 15px #00ffff, 8px 6px 10px #ff0000;
+        transform: translate(-1px, 2px); /* move o botao levemente para criar o efeito de tremor */
+        text-align: left;
+    }
+}
+
+/* Estilo do User Interface */
+.UI{
+    padding: 20px;
+    font-size: 16px;
+}
+
+/*Estilo do alvo */
+#target{
+    position: absolute;
+    padding: 15px;
+    border: 2px solid #39FF14;
+    cursor: pointer;
+    user-select: none;
+    background: #003200d8;
+    /*posicionamento inicial*/
+    top: 55%;
+    left: 50%;
+    animation: tremer-simples 0.08s infinite;
+}
+
+#target:hover{
+    transition: .2s;
+    background: #ff33338e;
+}
