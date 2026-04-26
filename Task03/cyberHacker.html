@@ -14,7 +14,7 @@
 
     <header>
         <h1>Cyber Hacker</h1>
-            <p>Hackea e IMPEÇA de ser hackeado!</p>
+            <p>Hackea o maximo que puder!</p>
             <button class="button_glitch" onclick="startGame()">Hackear</button>
     </header>
 
@@ -22,6 +22,10 @@
         <div class="UI">
             <p>DECRYPTED_FILES: <span id="score">0</span></p>
             <!--<p>HACKER_LEVEL: <span id="level">1</span></p> Se eu quiser adicionar dificuldades-->
+        </div>
+
+        <div id="terminal_log">
+            <div id="log_content"></div>
         </div>
 
         <div id="target" onclick="upScore()">ACESS_POINT</div>

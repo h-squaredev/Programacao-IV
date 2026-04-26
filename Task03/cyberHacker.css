@@ -12,7 +12,7 @@ body{
     font-family: 'firecode', monospace;
     color: #39FF14;
     font-size: 12px;
-    overflow-y: auto;
+    overflow: none;
 }
 
 /* Estilos para o header */
@@ -26,6 +26,7 @@ header{
 /* Esconder o jogo antes de iniciar */
 main{
     display: none;
+    user-select: none;
 }
 
 /* Estilos do botao para iniciar o game */
@@ -48,6 +49,7 @@ main{
     animation: tremer-simples 0.05s infinite; /*ativa a animacao de tremor*/
 }
 
+/* usando keyframes para criar o efeito de tremor do botao */
 @keyframes tremer-simples {
     /* de 0% a 100% o box-shadow alterna entre ciano e vermelho, criando um efeito de tremor com o botao*/
     0%, 100% {
@@ -67,6 +69,7 @@ main{
 .UI{
     padding: 20px;
     font-size: 16px;
+    justify-self: right;
 }
 
 /*Estilo do alvo */
@@ -85,7 +88,33 @@ main{
     transition: all .2s ease;
 }
 
+/* Efeito do mouse sobre o alvo */
 #target:hover{
     transition: .2s;
     background: #ff33338e;
+}
+
+/* Estilo do Terminal lateral */
+#terminal_log{
+    position: fixed;
+    top: 3rem;
+    left: 1rem;
+    width: 25rem;
+    height: 40rem;
+    background-color: #000f00d9;
+    border-left: 1px solid #39FF14;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px #39ff141a;
+    pointer-events: none; /* nao atrapalhar os cliques no alvo */
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Estilo do texto dentro do terminal */
+#terminal_log p{
+    margin: 5px 0;
+    line-height: 1.4;
+    text-shadow: none;
 }
