@@ -1,0 +1,209 @@
+/* Definicao de Variaveis de Tema (Cores e Fontes) */
+:root {
+    --bg-color: #0d1117;
+    --text-color: #c9d1d9;
+    --primary-color: #58a6ff;
+    --accent-color: #3fb950;
+    --font-main: "Courier New", Courier, monospace;
+}
+
+/* Classe dinamica adicionada via JavaScript */
+.containment-protocol {
+    --bg-color: #2b0000;
+    --text-color: #ffb0b0;
+    --primary-color: #ff5555;
+    --accent-color: #ff0000;
+}
+
+/* Estilos Globais e Flexbox */
+body {
+    background-color: var(--bg-color);
+    /*grade cibernetica com gradientes lineares */
+    background-image: 
+            linear-gradient(color-mix(in srgb, var(--primary-color) 10%, transparent) 1px, transparent 1px),
+            linear-gradient(90deg, color-mix(in srgb, var(--primary-color) 10%, transparent) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+    
+    /* Chamando Keyframe (nome, tempo, ritmo e repeticao) */
+    animation: moverGrade 1s linear infinite;
+
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    min-height: 100vh;
+}
+
+#main-header {
+    width: 100%;
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#main-header h1 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* =========================================
+   Estilizacao dos modelo 3D*/
+
+.container-3d{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.container-3d iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sketchfab {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 8px;
+    color: var(--text-color);
+    opacity: 0.4;
+}
+
+.sketchfab a {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+/*=========================================*/
+
+/* Organizacao de Layout com Classes */
+.wiki-section {
+    background-color: #161b22;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+article {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--text-color);
+}
+
+article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2, h3, h4 {
+    color: var(--accent-color);
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+
+/* Exemplo de aplicacao em um botao para deixa-lo com cara de painel */
+
+ul, ol {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid var(--text-color);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #0d1117;
+}
+
+/* Interatividade: Botões e Links */
+button {
+    background-color: var(--primary-color);
+    color: #0d1117;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.03);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+}
+
+/* Utilitarios e Classes JS */
+.hidden {
+    display: none;
+}
+
+.classified-text {
+    background-color: #ffd700;
+    color: #000;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    border-left: 5px solid #ff0000;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #161b22;
+    border-top: 1px solid var(--primary-color);
+}
+
+/* Animações Dinâmicas (Keyframes) */
+
+@keyframes moverGrade {
+    0% {
+        background-position: 0px 0px; /* Ponto inicial */
+    }
+    100% {
+        background-position: 40px 40px; /* Desloca a grade na diagonal */
+    }
+}
