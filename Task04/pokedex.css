@@ -6,18 +6,15 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #efc5ca 0%,#ef3749 100%);
     color: #333;
 }
 
-/* Banner topo */
 .banner {
-    background-color: #e3350d; /* Vermelho Pokémon */
+    background: linear-gradient(to bottom, #f18e99 8%,#f18e99 34%,#efc5ca 100%);
     color: white;
     text-align: center;
     padding: 20px 0;
-    border-bottom: 5px solid #222;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .container {
