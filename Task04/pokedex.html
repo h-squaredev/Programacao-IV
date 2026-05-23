@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pokédex - Pokémon</title>
+
+        <!-- Link para o arquivo CSS -->
+         <link rel="stylesheet" href="pokedex.css">
+    </head>
+    <body>
+        <header>
+            <h1> Pokédex </h1>
+        </header>
+        <main class="container">
+            <div class="controles">
+                <div class="busca">
+                    <input type="text" id="input-busca" placeholder="Buscar por Nome ou ID...">
+                        <button id="btn-busca">Buscar</button>
+                </div>                    
+            <div class="filtro">
+                <label for="select-tipo">Filtrar por Tipo: </label>
+                <select id="select-tipo">
+                    <option value="todos">Todos</option>
+                    <option value="fire">Fogo (Fire)</option>
+                    <option value="water">Água (Water)</option>
+                    <option value="grass">Planta (Grass)</option>
+                    <option value="electric">Elétrico (Electric)</option>
+                    <option value="bug">Inseto (Bug)</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Venenoso (Poison)</option>
+                    <option value="ground">Terra (Ground)</option>
+                </select>
+            </div>
+            </div>
+            <div id="pokedex-grid" class="grid">
+            </div>
+        </main>
+
+        <script src="pokedex.js"></script>
+</body>
+</html>

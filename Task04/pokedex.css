@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Banner topo */
+.banner {
+    background-color: #e3350d; /* Vermelho Pokémon */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #222;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Controles (Busca e Filtro) */
+.controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.busca input, .filtro select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.busca button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3b4cca; /* Azul Pokémon */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.busca button:hover {
+    background-color: #2a3a9a;
+}
+
+/* Grid de Exibição */
+.grid {
+    display: grid;
+    /* Cria colunas que se ajustam automaticamente, com tamanho minimo de 200px */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Cards dos Pokémons */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card .tipos span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: #888;
+    text-transform: uppercase;
+}

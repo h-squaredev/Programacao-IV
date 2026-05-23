@@ -6,3 +6,4 @@
 - [Hello Kitty & miguinhos](https://h-squaredev.github.io/Programacao-IV/Task02/hellokitty.html)
 - [Cyber Hacker](https://h-squaredev.github.io/Programacao-IV/Task03/cyberHacker.html)
 - [Doctor Who Wiki](https://h-squaredev.github.io/Programacao-IV/DoctorWhoWiki/doctorWho.html)
+- [Pokédex](https://h-squaredev.github.io/Programacao-IV/Task04/pokedex.html)
