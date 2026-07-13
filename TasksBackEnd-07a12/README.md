@@ -5,7 +5,7 @@ Este é o projeto contínuo desenvolvido para a disciplina de Programação IV, 
 ## 📋 Progresso das Atividades
 
 - [x] **Aula 07:** Implementação do CRUD completo (PessoaService, DTOs e rotas).
-- [ ] **Aula 08:** Migração do SQLite para a base de dados MySQL.
+- [x] **Aula 08:** Migração do SQLite para a base de dados MySQL.
 - [ ] **Aula 09 e 10:** Implementação de Autenticação e Segurança com JWT.
 - [ ] **Aula 11:** Integração com APIs externas.
 - [ ] **Aula 12:** Implementação de Testes Unitários.
