@@ -22,6 +22,27 @@
     </header>
 
     <main>
+        <div id="login-section" class="admin-panel">
+            <h2>Acesso ao Painel de Controle</h2>
+            <input type="text" id="username" placeholder="Usuário" />
+            <input type="password" id="password" placeholder="Senha" />
+            <button onclick="fazerLogin()">Entrar</button>
+        </div>
+        <!-- Formulário para adicionar nova postagem -->
+        <div id="create-post-section" class="admin-panel hidden">
+            <h2>Adicionar Nova Entrada na Wiki</h2>
+            <input type="text" id="titulo" placeholder="Título (ex: Cybermen)" />
+            <input type="text" id="imagem" placeholder="URL da Imagem" />
+            <input type="number" id="ordenacao" placeholder="Prioridade de Exibição (ex: 1)" />
+            <br><br>
+            <textarea id="conteudo" placeholder="Escreva o conteúdo aqui..." rows="4" cols="40"></textarea>
+            <br><br>
+            <button onclick="criarNovoPost()">Salvar Postagem</button>
+            <button onclick="fazerLogout()">Sair (Logout)</button>
+        </div>
+        
+        <div id="container-doctor-who"></div>
+        
         <section class="wiki-section">
             <h2>Artefatos de Hardware Avançado</h2>
 

@@ -5,6 +5,9 @@
     --primary-color: #58a6ff;
     --accent-color: #3fb950;
     --font-main: "Courier New", Courier, monospace;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--bg-color);
+    overflow-x: hidden;
 }
 
 /* Classe dinamica adicionada via JavaScript */
@@ -51,6 +54,39 @@ body {
     color: var(--primary-color);
     margin: 0 0 10px 0;
 }
+
+/* --------------------------------------------
+   ESTILOS DA INTEGRAÇÃO COM A API (BACK-END)*/
+
+/* Estilo geral para as caixas do painel de controle */
+.admin-panel {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Cores de fundo específicas para diferenciar Login e Criação */
+#login-section {
+background: linear-gradient(to bottom, #0d154970 0%,#0d0d0ddd 43%,#0d0d0ddd 58%,#0d154970 100%);
+}
+#create-post-section {
+    background: #cce5ff;
+}
+
+/* Classe para o JavaScript alternar a visibilidade */
+.hidden {
+    display: none !important;
+}
+
+/* Estilo para os cards de postagem carregados dinamicamente */
+.post-card {
+    border: 1px solid var(--text-color);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #161b22;}
+/* --------------------------------------------
+   ESTILOS GERAIS DO SITE */
 
 main {
     width: 90%;
